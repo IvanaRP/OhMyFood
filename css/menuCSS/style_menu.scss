@@ -16,6 +16,8 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+$button-pink:linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+
 $darkgrey:#353535;
 $mediumgrey:#e6e6e6;
 $lightgrey:#f5f5f5;
@@ -26,6 +28,10 @@ $fontsize: 1em;
 
 $shadow: 0px 5px 5px 0px rgba(0,0,0,0.64);;
 
+* a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
 
 body{
     font-family: 'Roboto';
@@ -40,7 +46,7 @@ body{
 /* Header*/
 
 .header{
-    color: black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +55,82 @@ body{
     background-color: white;
     box-shadow: $shadow;
     
+    &__arrow {
+        padding-right: 80px;
+    }
+
 }
+
+/*Photo*/
+
+.photo{
+display: flex;
+width: 100%;
+
+    &__img{
+        height: 190px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+     }
+}
+
+/*Menu*/
+.menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $lightgrey;
+     border-radius: 30px;
+
+    &__info{
+      display: flex;
+      flex-direction: column;
+      margin: 20px;  
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    &__option{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+&__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    &__p{
+        font-size: 1e;
+        font-weight: lighter;
+    }
+    &__h2{
+        font-size: 1e;
+        font-weight: lighter;
+    }
+  
+    &__button{
+       
+        text-align: center;
+        font-size: 1em;
+        color: white;
+        width: fit-content;
+       padding:0 20px 0 20px ;
+       background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        border-radius: 50px;
+    }
+
+}
+
+
+
 
 /*Location*/
 
@@ -58,7 +139,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: $darkgrey;
+    color:$darkgrey;
     background-color: $mediumgrey;
 
     &__cityname{
@@ -97,14 +178,13 @@ body{
         color: white;
         width: fit-content;
        padding:0 20px 0 20px ;
-        background-color: $color-secondary;
+       background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
         border-radius: 50px;
     }
   
 
 
 }
-
 
 
 /*Fonctionement*/
@@ -168,20 +248,21 @@ body{
 .restaurants{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  padding:10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:20px;
     background-color: $mediumgrey;
 
     &__cards{
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 100%;
         justify-content: space-between;
         align-content: center;
         flex-wrap: wrap;
         height: fit-content;
         padding-bottom: 10px;
+        
         margin: 0;
         
     }
@@ -192,74 +273,113 @@ body{
         align-content: center;
         justify-content: space-between;
         height: 95%;
-        width: 95%;
-        margin: 10px;
-        
+        width: 100%;
+        margin: 10px 0 40px 0;
         border-radius: 20px;
         background-color: #ffffff;
     }
 
-    &__follow{
+    &__new{
         display: flex;
-        
         justify-content: flex-end;
         width: fit-content;
         align-items: center;
-    position: absolute;
+        position: absolute;
         height: 2em;
-       
-        border-radius: 10px;
-      
-      margin-left: 60%;
+        border-radius: 5px;
+        margin-left: 60%;
+        margin-top: 10px;
+        padding: 0 10px 0 10px;
         color: white;
         background-color: $color-tertiary;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     &__img{
         height: 190px;
         width: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    &__like{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2em;
+        height: 2em;
+       
+    }
+    
+    &__name {
+        font-size: 1.5em;
+        margin:0;
+        padding: 0 0 10px 0;
+    }
+    &__location{
+        font-weight: lighter;
+        margin:0;
     }
 
+    &__fa-heart {
+        height: 5em;
+    }
+
+ 
   
 }
 
 /* Footer*/
 
 .footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    background-color: $darkgrey;
+    padding: 20px;
+    background-color:$darkgrey;
     color: #fff;
     
     &__section{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
     }
 
-    &__logo {
-        color: #fff;
-        font-size: 0.8em;
-        
-    }
-    &__navigation {
+    &__logo{
         display: flex;
         flex-direction: column;
+        padding-left: 30px;
+        
+    }
+
+    img{
+        color: $color-primary;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
 
     }
-    &__navigation__link {
-        display:flex;
+    &__navigation__link{
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-content: center;
         align-items: center;
-        text-decoration: none;
+        justify-content: space-between;
+        padding: 10px;
+       
     }    
-      
+
+   
+
 
 }
