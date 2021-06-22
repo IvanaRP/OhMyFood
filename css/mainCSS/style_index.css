@@ -31,6 +31,40 @@ body {
   background-color: white;
 }
 
+/*Loading spinner*/
+.loading {
+  height: 100%;
+  background: white;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid transparent;
+  border-top-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  border-radius: 50%;
+  -webkit-animation: loading 1s ease;
+          animation: loading 1s ease;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 /* Header*/
 .header {
   display: -webkit-box;
@@ -45,8 +79,9 @@ body {
   width: 100%;
   height: 80px;
   background-color: white;
-  -webkit-box-shadow: red;
-          box-shadow: red;
+  position: relative;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
 /*Location*/
@@ -158,6 +193,8 @@ body {
   padding: 20px;
   border-radius: 25px;
   text-align: center;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
 }
 
 .selection__number {
@@ -217,8 +254,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 20px;
-  background-color: #e6e6e6;
+  padding: 20px 20px 40px 20px;
+  background-color: #f5f5f5;
 }
 
 .restaurants__cards {
@@ -260,8 +297,10 @@ body {
   height: 95%;
   width: 100%;
   margin: 10px 0 20px 0;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
 }
 
 .restaurants__new {
@@ -311,7 +350,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .restaurants__like {
@@ -369,7 +408,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-bottom: 10px;
   font-family: "Shrikhand", sans-serif;
 }
@@ -409,7 +448,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.8em;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-bottom: 10px;
 }
 
