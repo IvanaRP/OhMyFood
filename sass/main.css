@@ -313,10 +313,15 @@ button {
   margin: 0;
 }
 
-.menus_hearts {
+.menus_heart .fa-heart {
   font-size: 1.5em;
   stroke: black;
-  stroke-width: 10;
+  color: #f5f5f5;
+  stroke-width: 40;
+}
+
+.fa-heart:hover {
+  color: red;
 }
 
 /*Location*/
@@ -631,10 +636,6 @@ button {
   height: 5em;
 }
 
-.svg-inline--fa.fa-w-16 {
-  color: white;
-}
-
 /* Footer*/
 * a, a:visited, a:hover, a:active {
   color: inherit;
@@ -906,8 +907,4 @@ button {
     visibility: hidden;
   }
 }
-
-/*@import "./components/checkanim";
-@import "./components/transitionanimation";
-@import "./components/animatehearts";*/
 /*# sourceMappingURL=main.css.map */
