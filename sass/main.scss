@@ -1,0 +1,30 @@
+@import "./utils/variables";
+
+/*@import "./utils/mixins";*/
+
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/menu";
+@import "./layout/location";
+@import "./layout/explore";
+@import "./layout/selection";
+@import "./layout/restaurants";
+@import "./layout/footer";
+
+
+@import "./pages/pages";
+
+/*@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";*/
+
+
+@import "./components/loadingspinner";
+@import "./components/checkanim";
+@import "./components/transitionanimation";
+/*@import "./components/animatehearts";*/

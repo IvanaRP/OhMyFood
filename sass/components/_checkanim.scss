@@ -1,0 +1,28 @@
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+    padding: 40px;
+    height: 100%;
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    
+    transition: 1s;
+
+  
+
+ 
+}
+
+
+
+
+
+      .checkicon{
+          color: white;
+          font-size: 1.5em;
+      }

@@ -1,0 +1,62 @@
+/* Footer*/
+
+* a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+.footer{
+    padding: 20px;
+    background-color:$darkgrey;
+    color: #fff;
+    
+    
+    &__block{
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-family:  $logo-font;
+        
+    }
+
+    &__navigation { 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-bottom: 10px;
+       
+        margin: 0%;
+   
+    }   
+   
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8em;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+    }
+   
+
+    &__link,h3{
+        margin: 0;
+        
+    }
+
+  
+
+
+}

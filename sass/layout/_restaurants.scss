@@ -1,0 +1,153 @@
+/*Restaurants*/
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 20px 40px 20px;
+    background-color: $lightgrey;
+
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        height: fit-content;
+        padding-bottom: 10px;
+        margin: 0;
+        
+      
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        height: 95%;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: $shadow-box;
+
+        &:hover{
+            opacity: 0.8;
+            box-shadow: $shadow-darker;
+            transform: scale(1.02);
+        }
+       
+    }
+
+    &__new{
+        display: flex;
+        justify-content: flex-end;
+        width: fit-content;
+        align-items: center;
+        position: absolute;
+        height: 2em;
+        border-radius: 5px;
+        margin-left: 67%;
+        margin-top: 10px;
+        padding: 0 10px 0 10px;
+        color: darken($color-tertiary, 50%);
+        background-color: $color-tertiary;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    &__img{
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    /*&__like{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        width: 2em;
+        height: 2em;
+        stroke: black;
+        stroke-width: 20;
+
+        &:hover{
+        
+            transition: 0.5s;
+            content: "";
+            fill:linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            
+         
+        }
+      
+    }
+
+    &__like--full{
+        visibility: none;
+    }*/
+    
+    &__name {
+        font-size: 1.5em;
+        margin:0;
+        padding: 0 0 10px 0;
+    }
+    &__location{
+        font-weight: lighter;
+        margin:0;
+    }
+
+    &__fa {
+        height: 5em;
+    }
+
+ 
+  
+}
+
+.svg-inline--fa.fa-w-16{
+    color: white;
+    
+}
+.like{
+    stroke: black;
+    stroke-width: 40;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    position: relative;
+    transition: transform 200ms ease-in;
+
+}
+
+.like::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   color: $color-tertiary;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+}
+
+.like:hover::after{
+    transform: scaleY(2);
+
+}
+
+
+

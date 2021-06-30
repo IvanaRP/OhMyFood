@@ -1,0 +1,16 @@
+.explore_button{
+       
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    width: fit-content;
+   padding:0 20px 0 20px ;
+   background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border-radius: 50px;
+    
+    &:hover{
+        opacity: 0.8;
+        box-shadow: $shadow-darker;
+    }
+   
+}

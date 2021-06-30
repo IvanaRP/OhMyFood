@@ -1,0 +1,18 @@
+/*Location*/
+
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  ;
+    background-color: $mediumgrey;
+
+    &__cityname{
+        padding-left: 10px;
+    }
+
+    &__icon{
+        font-size: 1.1em;
+    }
+}

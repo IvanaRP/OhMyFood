@@ -1,0 +1,212 @@
+/*Photo*/
+
+.photoGout{
+    background-image:url(/Users/ivanaradic/Documents/GitHub/Project3_OhMyFood/OhMyFood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    height:250px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+/*Menu*/
+.menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: $lightgrey;
+    border-radius: 30px 30px 0 0 ;
+    padding: 20px 20px 40px 20px;
+    margin-top: -80px;
+
+    
+  
+   
+    &__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__resto{
+        
+        font-family: $logo-font;
+    }
+
+    &__fav{
+        font-size: 1.5em;
+    }
+
+    &__meni{
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    &__info{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+       
+    }
+
+    a::after {
+        
+        content: "";
+        display: block;
+        width: 50px;
+        padding-top: 3px;
+        border-bottom: 5px solid $color-tertiary;
+    } 
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        font-weight: lighter;
+       
+    } 
+
+    &__h2{
+        padding-left: 20px;
+    }
+
+       
+  
+
+    &__option {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 10px;
+       
+        box-shadow: $shadow-box;
+
+        animation: transitionIN 2s ease-in-out;
+
+
+    }
+    
+    
+    
+    
+    @keyframes transitionIN {
+        from {
+    opacity: 0;
+    transform: translateY(-10deg);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+    
+    }
+    }
+
+    &__nom{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+       
+    }
+
+    &__tittle{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    &__subtittle{
+        margin: 0;
+        
+    }
+
+    &__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    }
+
+    &__prise{
+        font-size: 1e;
+        font-weight: lighter;
+        font-weight: bold;
+        
+        &:hover{
+
+
+        }
+    }
+
+   
+  
+   
+    &__button{
+       
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+        font-size: 1em;
+        color: white;
+        width: fit-content;
+        text-align: center;
+        padding:0 20px 0 20px ;
+        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        border-radius: 50px;
+
+        &:hover{
+            opacity: 0.8;
+            box-shadow: $shadow-darker;
+        }
+       
+   
+
+}
+
+
+h4{
+    margin:0;
+}
+
+
+
+
+.cena {
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    transition-duration: 600ms;
+    transform: translateX(0px)
+}
+
+.ikonadiv {
+    background-color: #99E2D0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition-duration: 600ms;
+    transform: translateX(60px);
+}
+
+.ikona{
+    color: white;
+    font-size: x-large;
+    transition-duration: 600ms;
+    transform: rotate(360deg);
+}
+

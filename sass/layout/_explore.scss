@@ -1,0 +1,49 @@
+/*Explore*/
+
+.explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: $lightgrey;
+    padding: 20px;
+
+
+    &__tittle{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    &__text{
+        text-align: center;
+        font-size: 1em;
+        font-weight: lighter;
+    }
+
+    &__button{
+       
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+        font-size: 1em;
+        color: white;
+        width: fit-content;
+        text-align: center;
+        padding:0 20px 0 20px ;
+        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        border-radius: 50px;
+
+        &:hover{
+            opacity: 0.8;
+            box-shadow: $shadow-darker;
+        }
+       
+    }
+
+
+
+}
+
