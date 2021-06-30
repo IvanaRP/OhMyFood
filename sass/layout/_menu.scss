@@ -52,9 +52,7 @@
         font-family: $logo-font;
     }
 
-    &__fav{
-        font-size: 1.5em;
-    }
+    
 
     &__meni{
         font-weight: lighter;
@@ -81,7 +79,18 @@
         display: flex;
         flex-direction: column;
         font-weight: lighter;
-       
+        animation: menu-load 300ms ease-in;
+
+        @keyframes menu-load {
+           0%{
+            transform: translateY(-100%);
+           } 
+           100%{
+            transform: translateY(0);
+           }
+        }
+
+
     } 
 
     &__h2{
@@ -191,34 +200,12 @@ h4{
 
 
 
-
-.cena {
-    font-weight: bold;
-    display: flex;
-    align-items: flex-end;
-    transition-duration: 600ms;
-    transform: translateX(0px)
 }
 
-.ikonadiv {
-    background-color: #99E2D0;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    transition-duration: 600ms;
-    transform: translateX(60px);
-}
 
-.ikona{
-    color: white;
-    font-size: x-large;
-    transition-duration: 600ms;
-    transform: rotate(360deg);
-}
-
+.menus_hearts{
+    font-size: 1.5em;
+    stroke: black;
+    stroke-width: 10;
+   
 }

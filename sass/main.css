@@ -130,10 +130,6 @@ button {
   font-family: "Shrikhand", sans-serif;
 }
 
-.menus__fav {
-  font-size: 1.5em;
-}
-
 .menus__meni {
   font-weight: lighter;
   text-transform: uppercase;
@@ -167,6 +163,30 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: lighter;
+  -webkit-animation: menu-load 300ms ease-in;
+          animation: menu-load 300ms ease-in;
+}
+
+@-webkit-keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .menus__h2 {
@@ -293,49 +313,10 @@ button {
   margin: 0;
 }
 
-.menus .cena {
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-.menus .ikonadiv {
-  background-color: #99E2D0;
-  width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
-}
-
-.menus .ikona {
-  color: white;
-  font-size: x-large;
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+.menus_hearts {
+  font-size: 1.5em;
+  stroke: black;
+  stroke-width: 10;
 }
 
 /*Location*/
@@ -530,31 +511,6 @@ button {
           align-items: flex-start;
   padding: 20px 20px 40px 20px;
   background-color: #f5f5f5;
-  /*&__like{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5em;
-        width: 2em;
-        height: 2em;
-        stroke: black;
-        stroke-width: 20;
-
-        &:hover{
-        
-            transition: 0.5s;
-            content: "";
-            fill:linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            
-         
-        }
-      
-    }
-
-    &__like--full{
-        visibility: none;
-    }*/
 }
 
 .restaurants__cards {
@@ -679,39 +635,6 @@ button {
   color: white;
 }
 
-.like {
-  stroke: black;
-  stroke-width: 40;
-  cursor: pointer;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: relative;
-  -webkit-transition: -webkit-transform 200ms ease-in;
-  transition: -webkit-transform 200ms ease-in;
-  transition: transform 200ms ease-in;
-  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-}
-
-.like::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #99E2D0;
-  -webkit-transform: scaleY(0.5);
-          transform: scaleY(0.5);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-}
-
-.like:hover::after {
-  -webkit-transform: scaleY(2);
-          transform: scaleY(2);
-}
-
 /* Footer*/
 * a, a:visited, a:hover, a:active {
   color: inherit;
@@ -815,9 +738,6 @@ button {
   left: 60px;
 }
 
-/*@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";*/
 /*Loading spinner*/
 .loading {
   -webkit-box-align: center;
@@ -987,50 +907,7 @@ button {
   }
 }
 
-.checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  padding: 40px;
-  height: 100%;
-  position: absolute;
-  left: -100px;
-  width: 100px;
-  height: 100px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.checkicon {
-  color: white;
-  font-size: 1.5em;
-}
-
-.menus__option {
-  -webkit-animation: transitionIN 2s ease-in-out;
-          animation: transitionIN 2s ease-in-out;
-}
-
-@keyframes transitionIN {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-10deg);
-            transform: translateY(-10deg);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-/*@import "./components/animatehearts";*/
+/*@import "./components/checkanim";
+@import "./components/transitionanimation";
+@import "./components/animatehearts";*/
 /*# sourceMappingURL=main.css.map */

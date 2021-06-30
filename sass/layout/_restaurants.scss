@@ -73,31 +73,7 @@
         border-radius: 15px 15px 0 0;
     }
     
-    /*&__like{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5em;
-        width: 2em;
-        height: 2em;
-        stroke: black;
-        stroke-width: 20;
-
-        &:hover{
-        
-            transition: 0.5s;
-            content: "";
-            fill:linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            
-         
-        }
-      
-    }
-
-    &__like--full{
-        visibility: none;
-    }*/
+   
     
     &__name {
         font-size: 1.5em;
@@ -120,33 +96,6 @@
 .svg-inline--fa.fa-w-16{
     color: white;
     
-}
-.like{
-    stroke: black;
-    stroke-width: 40;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
-    position: relative;
-    transition: transform 200ms ease-in;
-
-}
-
-.like::after{
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   color: $color-tertiary;
-    transform: scaleY(0.5);
-    transform-origin: bottom;
-}
-
-.like:hover::after{
-    transform: scaleY(2);
-
 }
 
 
