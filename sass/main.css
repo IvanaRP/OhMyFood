@@ -63,12 +63,26 @@ button {
 }
 
 /*Photo*/
-.photoGout {
-  background-image: url(/Users/ivanaradic/Documents/GitHub/Project3_OhMyFood/OhMyFood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 250px;
+/*.photoGout{
+    background-image:url(/Users/ivanaradic/Documents/GitHub/Project3_OhMyFood/OhMyFood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    height:250px;
+    width: 100%;
+    object-fit: cover;
+
+}*/
+.photoresto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 300px;
+}
+
+.photoresto img {
+  height: 300px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -92,7 +106,8 @@ button {
   background-color: #f5f5f5;
   border-radius: 30px 30px 0 0;
   padding: 20px 20px 40px 20px;
-  margin-top: -80px;
+  position: relative;
+  margin-top: -70px;
 }
 
 .menus__title {
@@ -177,6 +192,34 @@ button {
   margin-bottom: 10px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
           box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
+  -webkit-animation: transitionIN 2s ease-in-out;
+          animation: transitionIN 2s ease-in-out;
+}
+
+@-webkit-keyframes transitionIN {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10deg);
+            transform: translateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes transitionIN {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10deg);
+            transform: translateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .menus__nom {
@@ -187,6 +230,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80%;
 }
 
 .menus__tittle {
@@ -245,8 +289,53 @@ button {
           box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.59);
 }
 
-h4 {
+.menus h4 {
   margin: 0;
+}
+
+.menus .cena {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.menus .ikonadiv {
+  background-color: #99E2D0;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.menus .ikona {
+  color: white;
+  font-size: x-large;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 /*Location*/
@@ -912,54 +1001,35 @@ h4 {
   border-radius: 0 15px 15px 0;
   padding: 40px;
   height: 100%;
-  -webkit-animation: slide-left 0.5s ease;
-          animation: slide-left 0.5s ease;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-.checkbox:hover {
-  -webkit-animation: slide-left 0.5s ease;
-          animation: slide-left 0.5s ease;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes slide {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    opacity: 0;
-    visibility: hidden;
-  }
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .checkicon {
   color: white;
   font-size: 1.5em;
+}
+
+.menus__option {
+  -webkit-animation: transitionIN 2s ease-in-out;
+          animation: transitionIN 2s ease-in-out;
+}
+
+@keyframes transitionIN {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10deg);
+            transform: translateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 /*@import "./components/animatehearts";*/
