@@ -275,7 +275,7 @@ button {
           justify-content: space-between;
 }
 
-.menus__prise {
+.menus__price {
   font-size: 1e;
   font-weight: lighter;
   font-weight: bold;
@@ -322,6 +322,60 @@ button {
 
 .fa-heart:hover {
   color: red;
+}
+
+.check {
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 20px 20px 0;
+}
+
+.check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 100%;
+  background: #99E2D0;
+  -webkit-animation: slide 0.5s forwards;
+          animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+.check_icon {
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  font-size: 2em;
+  color: white;
 }
 
 /*Location*/

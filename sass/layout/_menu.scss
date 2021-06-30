@@ -158,7 +158,7 @@
    
     }
 
-    &__prise{
+    &__price{
         font-size: 1e;
         font-weight: lighter;
         font-weight: bold;
@@ -215,4 +215,46 @@ h4{
     color: red;
 }
 
+.check{
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+   border-radius: 0 20px 20px 0;
+}
+.check_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background: $color-tertiary;
+  
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
 
+    @keyframes slide {
+        100% { right: 0; }
+    }
+    
+    @keyframes slide {
+        100% { right: 0; }
+    }
+}
+
+.check_icon{
+
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    font-size: 2em;
+    color: white;
+
+
+ 
+    
+    
+
+   
+}
