@@ -26,6 +26,8 @@
     position: relative;
     margin-top: -70px;
 
+
+
     
   
    
@@ -34,6 +36,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__subtitle{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &__resto{
@@ -84,6 +92,9 @@
 
     &__h2{
         padding-left: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
        
@@ -102,6 +113,7 @@
 
         animation: transitionIN 2s ease-in-out;
 
+       
 
     }
     
@@ -127,16 +139,27 @@
         display: flex;
         flex-direction: column;
         width: 80%;
+        margin: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
        
     }
 
     &__tittle{
         margin: 0;
         padding-bottom: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
-    &__subtittle{
+    &__subtittle p{
         margin: 0;
+        padding: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         
     }
 
@@ -148,6 +171,7 @@
     }
 
     &__price{
+        padding: 10px;
         font-size: 1e;
         font-weight: lighter;
         font-weight: bold;
@@ -177,50 +201,82 @@
             opacity: 0.8;
             box-shadow: $shadow-darker;
         }
-       
-   
+ 
 
 }
 
 
 h4{
     margin:0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
 
 }
 
-
-.menus_heart .fa-heart{
+.menus_heart{
     font-size: 1.5em;
-    stroke: black;
-    color: $lightgrey;
-    stroke-width: 40;
- 
+    position: absolute;
+    right: 5%;
+    
+    &:hover{
+        
+        opacity: 0;
+
+        }
+
+  
 }
 
-.fa-heart:hover{
+
+.menus_heartfull{
+    
+    font-size: 1.5em;
+    position: absolute;
+    right: 5%;
+    opacity: 0;
     color: red;
+    scale: (0);
+    transition: margin-right 2s ease-in-out;
+    &:hover{
+        
+        transform: scale(1);
+        opacity: 1;
+
+        }
+
+   
 }
+
+
+
+
+
+
 
 .check{
     position: relative;
     overflow: hidden;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
    border-radius: 0 20px 20px 0;
+   margin-right: -60px;
+   opacity: 0;
+ 
 }
 .check_box{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: -60px;
-    width: 60px;
+    right: -80px;
+    width: 80px;
     height: 100%;
     background: $color-tertiary;
-  
+    
     animation: slide 0.5s forwards;
     animation-delay: 2s;
 
@@ -241,9 +297,19 @@ h4{
     color: white;
 
 
- 
-    
-    
+}
 
+.check:hover .fa-check-circle{
+    
+    transition: 1s;
+    transform: rotate(360deg);
    
+
+}
+
+
+.menus__option:hover .check{
+    margin-right: 0;
+    opacity: 1;
+    transition: margin-right 400ms ease-in;
 }
