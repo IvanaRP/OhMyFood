@@ -62,17 +62,6 @@ button {
           box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
-/*Photo*/
-/*.photoGout{
-    background-image:url(/Users/ivanaradic/Documents/GitHub/Project3_OhMyFood/OhMyFood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    height:250px;
-    width: 100%;
-    object-fit: cover;
-
-}*/
 .photoresto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,8 +152,8 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: lighter;
-  -webkit-animation: menu-load 300ms ease-in;
-          animation: menu-load 300ms ease-in;
+  -webkit-animation: menu-load 1s ease-in;
+          animation: menu-load 1s ease-in;
 }
 
 @-webkit-keyframes menu-load {
