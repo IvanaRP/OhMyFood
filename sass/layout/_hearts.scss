@@ -1,0 +1,45 @@
+.menus_heart{
+    font-size: 1.5em;
+    position: absolute;
+    right: 5%;
+   
+ 
+}
+
+
+.menus_heartfull{
+    
+    font-size: 1.5em;
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    background-color: white;
+   
+    &:hover{
+            cursor:pointer; 
+            font-weight:bold;
+            -moz-animation:backgroundtwo 2s  ;
+            -webkit-animation:backgroundtwo  2s  ;
+            animation: backgroundtwo 2s  ;
+            background:$color-heart;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+       
+        }
+
+   
+@keyframes backgroundtwo{
+    0%{
+      opacity:0;
+    }
+    50%{
+      opacity:0.5;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+}
+
+
