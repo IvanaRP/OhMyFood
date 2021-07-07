@@ -1024,10 +1024,6 @@ button {
   margin: 0;
 }
 
-.resto__heart {
-  font-size: 1.5em;
-}
-
 /* Footer*/
 * a, a:visited, a:hover, a:active {
   color: inherit;
@@ -1106,27 +1102,26 @@ button {
   margin: 0;
 }
 
-.menus_heart {
+/* HEARTMENU */
+.like__heart {
   font-size: 1.5em;
   position: absolute;
-  right: 5%;
+  right: 10%;
 }
 
-.menus_heartfull {
+.like__heartfull {
   font-size: 1.5em;
   position: absolute;
-  right: 5%;
+  right: 10%;
   opacity: 0;
   background-color: white;
 }
 
-.menus_heartfull:hover {
+.like__heartfull:hover {
   cursor: pointer;
-  font-weight: bold;
   -webkit-animation: backgroundtwo  2s;
   animation: backgroundtwo 2s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -1,27 +1,27 @@
-.menus_heart{
+/* HEARTMENU */ 
+.like__heart{
     font-size: 1.5em;
     position: absolute;
-    right: 5%;
+    right: 10%;
    
- 
 }
 
 
-.menus_heartfull{
+.like__heartfull{
     
     font-size: 1.5em;
     position: absolute;
-    right: 5%;
+    right: 10%;
     opacity: 0;
     background-color: white;
    
     &:hover{
+
             cursor:pointer; 
-            font-weight:bold;
             -moz-animation:backgroundtwo 2s  ;
             -webkit-animation:backgroundtwo  2s  ;
             animation: backgroundtwo 2s  ;
-            background:$color-heart;
+            background:-webkit-linear-gradient( #9356dc,#ff79da);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -43,3 +43,4 @@
 }
 
 
+   
