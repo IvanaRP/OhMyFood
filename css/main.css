@@ -237,6 +237,30 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: lighter;
+  -webkit-animation: menu-load 1s ease-in;
+          animation: menu-load 1s ease-in;
+}
+
+@-webkit-keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .menus__h2 {
@@ -265,30 +289,33 @@ button {
   margin-bottom: 10px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
           box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.39);
-  overflow: hidden;
-  -webkit-animation: scale 1s ease-in;
-          animation: scale 1s ease-in;
+  -webkit-animation: transitionIN 2s ease-in-out;
+          animation: transitionIN 2s ease-in-out;
 }
 
-@-webkit-keyframes scale {
+@-webkit-keyframes transitionIN {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+    -webkit-transform: translateY(-10deg);
+            transform: translateY(-10deg);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes scale {
+@keyframes transitionIN {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+    -webkit-transform: translateY(-10deg);
+            transform: translateY(-10deg);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -378,7 +405,7 @@ button {
   white-space: nowrap;
 }
 
-.menus .check {
+.check {
   position: relative;
   overflow: hidden;
   width: 80px;
@@ -388,7 +415,7 @@ button {
   opacity: 0;
 }
 
-.menus .check_box {
+.check_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,21 +454,21 @@ button {
   }
 }
 
-.menus .check_icon {
+.check_icon {
   padding: 20px;
   border-radius: 0 20px 20px 0;
   font-size: 2em;
   color: white;
 }
 
-.menus .check:hover .fa-check-circle {
+.check:hover .fa-check-circle {
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.menus .menus__option:hover .check {
+.menus__option:hover .check {
   margin-right: 0;
   opacity: 1;
   -webkit-transition: margin-right 400ms ease-in;
@@ -1082,30 +1109,22 @@ button {
   right: 10%;
 }
 
-.fa-heart::before {
-  color: transparent;
-  position: relative;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
-}
-
 .like__heartfull {
   font-size: 1.5em;
   position: absolute;
   right: 10%;
   opacity: 0;
+  background-color: white;
 }
 
 .like__heartfull:hover {
   cursor: pointer;
   -webkit-animation: backgroundtwo  2s;
   animation: backgroundtwo 2s;
-  background: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
 }
 
 @-webkit-keyframes backgroundtwo {

@@ -3,8 +3,19 @@
     font-size: 1.5em;
     position: absolute;
     right: 10%;
+  
    
 }
+
+
+.fa-heart::before{
+  color: transparent;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(225deg, #9356dc,#ff79da);
+}
+
 
 
 .like__heartfull{
@@ -13,7 +24,7 @@
     position: absolute;
     right: 10%;
     opacity: 0;
-    background-color: white;
+   
    
     &:hover{
 
@@ -21,10 +32,11 @@
             -moz-animation:backgroundtwo 2s  ;
             -webkit-animation:backgroundtwo  2s  ;
             animation: backgroundtwo 2s  ;
-            background:-webkit-linear-gradient( #9356dc,#ff79da);
+            background:-webkit-linear-gradient(225deg, #9356dc,#ff79da);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            opacity: 1;
        
         }
 
@@ -44,3 +56,10 @@
 
 
    
+
+ 
+
+
+ 
+   
+
