@@ -1,0 +1,68 @@
+.heart{
+    position:absolute;
+    box-sizing: border-box;
+    width: 55px;
+    height:55px;
+    right: 50px;
+}
+
+.outline{
+    position:absolute;
+    font-size:3em;  
+    color: grey;
+opacity: 1;
+
+    &:hover{
+        opacity: 0;
+    }
+
+
+}
+
+
+.gradient {
+    font-size:3em;
+    color: #9c47fc;
+
+
+    opacity: 0;
+
+    &:hover{
+
+        cursor:pointer; 
+          -moz-animation:backgroundtwo 2s  ;
+          -webkit-animation:backgroundtwo  2s  ;
+          animation: backgroundtwo 2s  ;
+          background:-webkit-linear-gradient(225deg, #9356dc,#ff79da);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity: 1;
+    
+    }
+  }
+
+
+
+@keyframes backgroundtwo{
+    0%{         
+      opacity:0;
+    }
+    50%{
+      opacity:0.5;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
+
+  .fas  .gradient {
+    font-size: 32px;
+    color: #9c47fc;
+    display: block;
+    background: -webkit-linear-gradient(#9c47fc, #356ad2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

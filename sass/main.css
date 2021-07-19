@@ -378,6 +378,56 @@ button {
   white-space: nowrap;
 }
 
+.menus .delay1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.menus .delay2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.menus .delay3 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.menus .delay4 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.menus .delay5 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.menus .delay6 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.menus .delay7 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.menus .delay8 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.menus .delay9 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.menus .delay10 {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+
 .menus .check {
   position: relative;
   overflow: hidden;
@@ -1075,35 +1125,46 @@ button {
   margin: 0;
 }
 
-/* HEARTMENU */
-.like__heart {
-  font-size: 1.5em;
+.heart {
   position: absolute;
-  right: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3em;
+  height: 3em;
+  right: 50px;
 }
 
-.fa-heart::before {
-  color: transparent;
-  position: relative;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
+.outlineheart {
+  position: absolute;
+  font-size: 3em;
+  width: 3em;
+  height: 3em;
+  color: grey;
 }
 
-.like__heartfull {
-  font-size: 1.5em;
+.fullheart {
   position: absolute;
-  right: 10%;
+  font-size: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+.fullheart svg * {
+  fill: url(#lgrad);
+}
+
+.gradient {
   opacity: 0;
 }
 
-.like__heartfull:hover {
+.gradient:hover {
   cursor: pointer;
   -webkit-animation: backgroundtwo  2s;
   animation: backgroundtwo 2s;
-  background: -webkit-linear-gradient(225deg, #9356dc, #ff79da);
-  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(47deg, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
 }

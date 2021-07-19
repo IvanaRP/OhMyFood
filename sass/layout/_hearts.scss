@@ -1,65 +1,69 @@
-/* HEARTMENU */ 
-.like__heart{
-    font-size: 1.5em;
-    position: absolute;
-    right: 10%;
+
+.heart{
+  position:absolute;
+ align-items: center;
+  width:3em;
+  height: 3em;
+  right: 50px;
+}
+
+.outlineheart{
+  position:absolute;
   
-   
+  font-size:3em;  
+  width:3em;
+  height: 3em;
+  color: grey;
+
+}
+.fullheart{
+  position:absolute;
+ 
+  font-size:3em;  
+  width:3em;
+  height: 3em;
+  
+
 }
 
+.fullheart svg * {
+  fill: url(#lgrad);
 
-.fa-heart::before{
-  color: transparent;
-  position: relative;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: -webkit-linear-gradient(225deg, #9356dc,#ff79da);
 }
 
+.gradient {
+  
+ 
+  opacity: 0;
 
+  &:hover{
 
-.like__heartfull{
-    
-    font-size: 1.5em;
-    position: absolute;
-    right: 10%;
-    opacity: 0;
-   
-   
-    &:hover{
-
-            cursor:pointer; 
-            -moz-animation:backgroundtwo 2s  ;
-            -webkit-animation:backgroundtwo  2s  ;
-            animation: backgroundtwo 2s  ;
-            background:-webkit-linear-gradient(225deg, #9356dc,#ff79da);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            opacity: 1;
-       
-        }
-
-   
-@keyframes backgroundtwo{
-    0%{
-      opacity:0;
-    }
-    50%{
-      opacity:0.5;
-    }
-    100%{
-      opacity:1;
-    }
+      cursor:pointer; 
+        -moz-animation:backgroundtwo 2s  ;
+        -webkit-animation:backgroundtwo  2s  ;
+        animation: backgroundtwo 2s  ;
+        background:-webkit-linear-gradient(47deg, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+  
   }
 }
 
 
-   
 
- 
+@keyframes backgroundtwo{
+  0%{         
+    opacity:0;
+  }
+  50%{
+    opacity:0.5;
+  }
+  100%{
+    opacity:1;
+  }
+}
 
 
- 
-   
 

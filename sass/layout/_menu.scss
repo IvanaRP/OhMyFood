@@ -128,10 +128,6 @@
         display: flex;
         flex-direction: column;
         font-weight: lighter;
-       
-
-      
-
 
     } 
 
@@ -142,7 +138,8 @@
         white-space: nowrap;
     }
 
-       
+    
+     
   
 
     &__option {
@@ -157,24 +154,18 @@
         box-shadow: $shadow-box;
         overflow: hidden;
 
+
         animation: scale 1s ease-in;
         @keyframes scale {
-            from {
-              transform: scale(0);
-            }
-            to {
-              transform: scale(1);
-            }
-          }
-
-
-          
-       
-    
+                        from {
+                        transform: scale(0);
+                        }
+                        to {
+                        transform: scale(1);
+                        }
+                    }
 
     }
-    
-   
    
     
 
@@ -257,8 +248,46 @@ h4{
 }
 
 
+.delay1{
+    animation-delay: 200ms;
+}
+.delay2{
+   animation-delay: 300ms;
+}
 
+.delay3{
+    animation-delay: 400ms;
+ }
+ 
+.delay4{
+    animation-delay: 500ms;
+ } 
 
+.delay5{
+    animation-delay: 600ms;
+}
+
+.delay6{
+    animation-delay: 700ms;
+}
+
+.delay7{
+    animation-delay: 800ms;
+}
+
+.delay8{
+    animation-delay: 900ms;
+}
+
+.delay9{
+    animation-delay: 1000ms;
+}
+
+.delay10{
+    animation-delay: 1100ms;
+}
+
+ 
 
 .check{
     position: relative;
