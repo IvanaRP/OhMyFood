@@ -135,6 +135,47 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Desktop version */
+  /*media tablet*/
+}
+
+@media (min-width: 1150px) {
+  .menus__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .menus__title {
+    padding: 20px 20px 60px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 50px;
+  }
 }
 
 .menus__subtitle {
@@ -1037,14 +1078,52 @@ button {
 }
 
 .resto__name, .resto h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1.5em;
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 20px 10px 0;
 }
 
 .resto__location {
   font-weight: lighter;
   margin: 0;
+}
+
+.resto__names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.restaurants__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 /* Footer*/
@@ -1126,28 +1205,27 @@ button {
 }
 
 .heart {
-  position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 3em;
-  height: 3em;
-  right: 50px;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0 20px 0 70px;
 }
 
 .outlineheart {
   position: absolute;
-  font-size: 3em;
-  width: 3em;
-  height: 3em;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
   color: grey;
 }
 
 .fullheart {
   position: absolute;
-  font-size: 3em;
-  width: 3em;
-  height: 3em;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .fullheart svg * {

@@ -56,6 +56,24 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+             /* Desktop version */ 
+     @media (min-width:1150px) {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        padding-left: 50px;
+    }
+/*media tablet*/
+    @media screen and (min-width:768px) and (max-width:1150px){
+        padding: 20px 20px 60px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        padding-left: 50px;
+    }
+
     }
 
    
