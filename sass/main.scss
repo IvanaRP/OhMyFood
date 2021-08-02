@@ -1,13 +1,20 @@
+
+
+/*Utilities*/
 @import "./utils/variables";
 
-/*@import "./utils/mixins";*/
 
-
+/*Base*/
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
 
+/*Base*/
+@import "./components/buttons";
+@import "./components/loadingspinner";
+
+
+/*Layout*/
 @import "./layout/header";
 @import "./layout/menu";
 @import "./layout/location";
@@ -19,9 +26,8 @@
 
 
 
-@import "./pages/pages";
 
 
 
-@import "./components/loadingspinner";
+
 

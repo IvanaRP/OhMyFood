@@ -10,6 +10,13 @@
     background-color: white;
     position: relative;
     box-shadow: $shadow;
+
+    &__arrow{
+        position: absolute;
+        font-size: 1.5em;
+        top: 28px;
+        left: 60px;
+    }
  
 }
 
