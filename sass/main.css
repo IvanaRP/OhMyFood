@@ -677,6 +677,7 @@ button {
           animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  /*media tablet*/
 }
 
 @-webkit-keyframes slide {
@@ -694,6 +695,12 @@ button {
 @keyframes slide {
   100% {
     right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .menus .check_box {
+    width: 60px;
   }
 }
 

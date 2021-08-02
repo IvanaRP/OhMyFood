@@ -337,6 +337,12 @@ h4{
     @keyframes slide {
         100% { right: 0; }
     }
+
+  
+/*media tablet*/
+    @media screen and (min-width:768px) and (max-width:1150px){
+        width: 60px;
+    }
 }
 
 .check_icon{
