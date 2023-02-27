@@ -22,4 +22,4 @@ Mobile-first approach.<br>
 Only the mobile model has been provided, desktop and tablet results are free.<br>
 Only CSS can be used, no Javascript and no framework.<br>
 Using SASS is required.<br>
-The colors to be used : #9356DC as primary, #FF79DA as secondary, #99E2D0 as tertiary.<br>
+
